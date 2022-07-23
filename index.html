@@ -9,10 +9,10 @@
   <title>The Odin Project: Admin Dasboard</title>
 </head>
 
-<body>
+<body class="">
   <nav class="">
-    <div class="logo-container">
-      <img src="./img/logo.svg" alt="" class="logo-img" width="50">
+    <div class="logo-container" id="logo">
+      <img src="./img/logo.svg" alt="logo" class="logo-img" width="50">
       <h1>dashboard</h1>
     </div>
     <div class="nav-items">
@@ -68,7 +68,7 @@
         <input type="search" placeholder="Search">
       </div>
       <i class="uil uil-bell"></i>
-      <i class="uil uil-toggle-on"></i> <!-- <i class="uil uil-toggle-on"></i> -->
+      <span id="darkmode-toggle"><i class="uil uil-toggle-off"></i></span>
     </div>
   </header>
 
@@ -100,8 +100,8 @@
     <i class="uil uil-analytics"></i>
     <h1>Statistics</h1>
   </div>
-  <div class="dashboard-card">
-    <img src="./img/chart.svg" alt="">
+  <div class="dashboard-card" id="chart">
+    <img src="./img/chart.svg" alt="chart">
   </div>
 </section>
 

@@ -10,8 +10,17 @@
   --yellow: #FFB710;
 }
 
+body.dark {
+  --font: #FFFFFF;
+  --background: #2C2A42;
+  --cards: #222131;
+  --primary-color: #5197FF;
+  --primary-darker: #141324;
+}
+
+
 * {
-    margin: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -20,11 +29,11 @@ body {
   font-family: 'Poppins', sans-serif;
   height: 100vh;
   width: 100vw;
+  color: var(--font);
 }
 
 
 /* sidebar */
-
 nav {
   height: 100%;
   width: 250px;
@@ -34,6 +43,7 @@ nav {
   left: 0;
   overflow-x: auto;
   transition: all .3s;
+  background-color: var(--background);
 }
 
 .logo-container {
@@ -157,7 +167,7 @@ header i:hover:not(.uil-search) {
 main {
   width: calc(100% - 320px - 250px);
   min-width: 400px;
-  top: 90px;
+  top: 70px;
   left: 250px;
   right: 320px;
   position: relative;
@@ -165,6 +175,9 @@ main {
   display: grid;
   grid-template-rows: 1fr 1fr 3fr;
   transition: all .3s;
+  padding: 1rem;
+  background-color: var(--background);
+  min-height: 1100px
 }
 
 .title {
@@ -197,7 +210,6 @@ main {
 .main-section {
   padding: 1rem;
 }
-
 
 /* visitors */
 .visitors {
@@ -247,6 +259,10 @@ main {
   background-color: var(--background);
 }
 
+body.dark .statistics .dashboard-card {
+  background-color: var(--cards);
+}
+
 /* recent activity */
 table {
   width: 100%;
@@ -284,6 +300,10 @@ td {
   border-radius: 40px;
 }
 
+body.dark .user-panel {
+  background-color: var(--primary-darker);
+}
+
 .user-info {
   color: var(--background);
   display: flex;
@@ -291,6 +311,10 @@ td {
   align-items: center;
   padding-top: 1.5rem;
   padding-left: 1rem;
+}
+
+body.dark .user-info {
+  color: var(--font);
 }
 
 .user-text {
@@ -322,11 +346,20 @@ td {
   background-color: var(--primary-darker);
   font-size: 1rem;
   font-family: inherit;
+  font-weight: 600;
   color: var(--background);
   cursor: pointer;
 }
 
+body.dark .buttons button {
+  background-color: var(--yellow);
+}
+
 .buttons button:hover {
+  background-color: var(--font);
+}
+
+body.dark .buttons button:hover {
   background-color: var(--font);
 }
 
@@ -357,6 +390,7 @@ td {
   margin-top: 1rem;
 }
 
+
 /* close nav */
 nav.close {
   width: 90px;
@@ -370,8 +404,8 @@ nav.close li span {
   display: none;
 }
 
-nav.close ~ main, nav.close ~ header {
-    width: calc(100% - 320px - 90px);
-    left: 90px;
+nav.close~main,
+nav.close~header {
+  width: calc(100% - 320px - 90px);
+  left: 90px;
 }
-
