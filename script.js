@@ -21,12 +21,12 @@ function toggleDarkmode() {
     chart.innerHTML = '<img src="./img/chart-dark.svg" alt="chart">';
     logo.innerHTML =
       '<img src="./img/logo-dark.svg" alt="logo" class="logo-img" width="50"><h1>dashboard</h1>';
-    toggleDarkmodeBtn.innerHTML = '<i class="uil uil-toggle-on"></i>';
+    toggleDarkmodeBtn.innerHTML = '<i class="uil uil-sun"></i>';
   } else if (darkmode) {
     darkmode = false;
     chart.innerHTML = '<img src="./img/chart.svg" alt="chart">';
     logo.innerHTML =
       '<img src="./img/logo.svg" alt="logo" class="logo-img" width="50"><h1>dashboard</h1>';
-    toggleDarkmodeBtn.innerHTML = '<i class="uil uil-toggle-off"></i>';
+    toggleDarkmodeBtn.innerHTML = '<i class="uil uil-moon"></i>';
   }
 }
