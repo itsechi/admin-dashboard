@@ -13,6 +13,7 @@ Admin Dashboard created for The Odin Project to practice using CSS Grid (and Fle
 * [unDraw](https://undraw.co/) - illustrations
 * [logodust](https://logodust.com/) - logo
 * [IconScout](https://iconscout.com/unicons) - icons
+* [gauger.io](https://gauger.io/fonticon/) - favicon
 
 ## What could be improved
 * make it look better on mobile
